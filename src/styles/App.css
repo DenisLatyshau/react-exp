@@ -23,6 +23,10 @@
     margin-top: 15px;
 }
 
+.post__btns {
+  display: flex;
+}
+
 .post-enter {
     transform: translateX(-350px);
   }
@@ -68,4 +72,9 @@
 
 .navbar__links {
   margin-left: auto;
+}
+
+.active-link {
+  color: blue;
+  font-size: 18px;
 }

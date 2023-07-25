@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const setActive = ({isActive}) => isActive ? 'active-link' : ''
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar__links">
-            <Link to="/about">О сайте</Link>
-            <Link to="/posts">Посты</Link>
+            <NavLink to="/about" className={setActive}>О сайте</NavLink>
+            <NavLink to="/posts" className={setActive}>Посты</NavLink>
             </div>
         </div>
     )
